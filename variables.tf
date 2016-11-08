@@ -48,5 +48,6 @@ variable "instance" {
     cidr = ""
     subnet_id = ""
     type = ""
+    vpc_id = ""
   }
 }
