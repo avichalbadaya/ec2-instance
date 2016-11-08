@@ -13,6 +13,6 @@ resource "aws_instance" "testinstance" {
     Name       = "${var.atlas["org"]}/${var.atlas["env"]}/testinstance"
     ChargeCode = "${var.atlas["charge_code"]}"
   }
-  
+  iam_instance_profile = "${var.instance["iam_role"]}"
   key_name = "${var.aws["key_pair_name"]}"
 }

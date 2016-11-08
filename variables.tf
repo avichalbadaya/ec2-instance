@@ -49,5 +49,6 @@ variable "instance" {
     subnet_id = ""
     type = ""
     vpc_id = ""
+    iam_role = ""
   }
 }
